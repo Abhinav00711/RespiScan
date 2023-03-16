@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RespiScan  | TEST</title>
+    <script src="https://kit.fontawesome.com/e2ac9cc532.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <form method="POST" action="{{ url_for('result')}}">
+    <div class="signup-container">
+        <div class="left-container">
+          <h1>
+            <img src="static/RespiScan.png"/>
+          </h1>
+          <!--<div class="puppy">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-542207-jpeg.png"/>
+          </div>-->
+        </div>
+        <div class="right-container">
+          <header>
+           <!-- <h1>Yay, puppies! Ensure your pup gets the best care! </h1>-->
+            <div class="set">
+              <div class="rl">
+                <label for="name">Name</label>
+                <input id="name" placeholder="Name" type="text" required></input>
+              </div>
+              <div class="ll">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br><br>
+              </div>
+            </div>
+            <div class="set">
+              <div class="rl">
+                <label for="gender">Gender</label>
+                <div class="radio-container">
+                  <input id="gender-female" name="gender" type="radio" value="0" required></input>
+                  <label for="gender-female">Female</label>
+                  <input id="gender-male" name="gender" type="radio" value="1"></input>
+                  <label for="gender-male">Male</label>
+                </div>
+              </div>
+              <div class="ll">
+                <label for="smoking">Do you smoke?</label>
+                <div class="radio-container">
+                  <input id="smoking-yes" name="smoking" type="radio" value="1" required></input>
+                  <label for="smoking-yes">Yes</label>
+                  <input id="smoking-no" name="smoking" type="radio" value="0"></input>
+                  <label for="smoking-no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="set">
+              <div class="rl">
+                <label for="peer-pressure">Do you face peer pressure to smoke?</label>
+                <div class="radio-container">
+                  <input id="peer-pressure-yes" name="peer-pressure" type="radio" value="1" required></input>
+                  <label for="peer-pressure-yes">Yes</label>
+                  <input id="peer-pressure-no" name="peer-pressure" type="radio" value="0"></input>
+                  <label for="peer-pressure-no">No</label>
+                </div>
+              </div>
+              <div class="ll">
+                <label for="yellow-fingers">Do you have yellow fingers?</label>
+                <div class="radio-container">
+                  <input id="yellow-fingers-yes" name="yellow-fingers" type="radio" value="1" required></input>
+                  <label for="yellow-fingers-yes">Yes</label>
+                  <input id="yellow-fingers-no" name="yellow-fingers" type="radio" value="0"></input>
+                  <label for="yellow-fingers-no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="set">
+              <div class="rl">
+                <label for="anxiety">Do you have anxiety?</label>
+                <div class="radio-container">
+                  <input id="anxiety-yes" name="anxiety" type="radio" value="1" required></input>
+                  <label for="anxiety-yes">Yes</label>
+                  <input id="anxiety-no" name="anxiety" type="radio" value="0"></input>
+                  <label for="anxiety-no">No</label>
+                </div>
+              </div>
+              <div class="ll">
+                <label for="fatigue">Do you feel fatigue?</label>
+                <div class="radio-container">
+                  <input id="fatigue-yes" name="fatigue" type="radio" value="1" required></input>
+                  <label for="fatigue-yes">Yes</label>
+                  <input id="fatigue-no" name="fatigue" type="radio" value="0"></input>
+                  <label for="fatigue-no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="set">
+              <div class="rl">
+                <label for="chronic-disease">Do you have any chronic diseases?</label>
+                <div class="radio-container">
+                  <input id="chronic-disease-yes" name="chronic-disease" type="radio" value="1" required></input>
+                  <label for="chronic-disease-yes">Yes</label>
+                  <input id="chronic-disease-no" name="chronic-disease" type="radio" value="0"></input>
+                  <label for="chronic-disease-no">No</label>
+                </div>
+              </div>
+              <div class="ll">
+                <label for="allergy">Do you have any allergies?</label>
+                <div class="radio-container">
+                  <input id="allergy-yes" name="allergy" type="radio" value="1" required></input>
+                  <label for="allergy-yes">Yes</label>
+                  <input id="allergy-no" name="allergy" type="radio" value="0"></input>
+                  <label for="allergy-yes">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="set">
+              <div class="rl">
+                <label for="wheezing">Do you wheeze?</label>
+                <div class="radio-container">
+                  <input id="wheezing-yes" name="wheezing" type="radio" value="1" required></input>
+                  <label for="wheezing-yes">Yes</label>
+                  <input id="wheezing-no" name="wheezing" type="radio" value="0"></input>
+                  <label for="wheezing-no">No</label>
+                </div>
+              </div>
+              <div class="ll">
+                <label for="coughing">Do you cough?</label>
+                <div class="radio-container">
+                  <input id="coughing-yes" name="coughing" type="radio" value="1" required></input>
+                  <label for="coughing-yes">Yes</label>
+                  <input id="coughing-no" name="coughing" type="radio" value="0"></input>
+                  <label for="coughing-no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="set">
+              <div class="rl">
+                <label for="alcohol">Do you consume alcohol?</label>
+                <div class="radio-container">
+                  <input id="alcohol-yes" name="alcohol" type="radio" value="1" required></input>
+                  <label for="alcohol-yes">Yes</label>
+                  <input id="alcohol-no" name="alcohol" type="radio" value="0"></input>
+                  <label for="alcohol-no">No</label>
+                </div>
+              </div>
+              <div class="ll">
+                <label for="shortness-of-breath">Do you experience shortness of breath?</label>
+                <div class="radio-container">
+                  <input id="shortness-of-breath-yes" name="shortness-of-breath" type="radio" value="1" required></input>
+                  <label for="shortness-of-breath-yes">Yes</label>
+                  <input id="shortness-of-breath-no" name="shortness-of-breath" type="radio" value="0"></input>
+                  <label for="shortness-of-breath-no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="set">
+              <div class="rl">
+                <label for="swallowing-difficulty">Do you have difficulty swallowing?</label>
+                <div class="radio-container">
+                  <input id="swallowing-difficulty-yes" name="swallowing-difficulty" type="radio" value="1" required></input>
+                  <label for="swallowing-difficulty-yes">Yes</label>
+                  <input id="swallowing-difficulty-no" name="swallowing-difficulty" type="radio" value="0"></input>
+                  <label for="swallowing-difficulty-no">No</label>
+                </div>
+              </div>
+              <div class="ll">
+                <label for="chest-pain">Do you experience chest pain?</label>
+                <div class="radio-container">
+                  <input id="chest-pain-yes" name="chest-pain" type="radio" value="1" required></input>
+                  <label for="chest-pain-yes">Yes</label>
+                  <input id="chest-pain-no" name="chest-pain" type="radio" value="0"></input>
+                  <label for="chest-pain-no">No</label>
+                </div>
+              </div>
+            </div>
+          </header>
+          <footer>
+            <div class="set">
+             <!--<button id="back">Back</button>-->
+              <button id="next" type="submit" value="Submit">Submit</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+  </form>
+</body>
+</html>
