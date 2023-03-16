@@ -33,20 +33,16 @@ Lung cancer prediction using 9 machine learning classification models using Scik
 
 ✅Building application using intel oneDAL:The Intel oneAPI Data Analytics Library (oneDAL) contributes to the acceleration of big data analysis by providing highly optimised algorithmic building blocks for all phases of data analytics (preprocessing, transformation, analysis, modelling, validation, and decision making) in batch, online, and distributed processing modes of computation.The library optimizes data ingestion along with algorithmic computation to increase throughput and scalability.
 
-✅Building a crop recommendation application involves a significant amount of research and development. During the process, I likely learned a number of things, including:
-
-✅Soil Science: I likely gained a deeper understanding of soil science and the various factors that affect crop growth, such as pH levels, nutrient content, and soil moisture levels.
+✅Building a lung cancer detection application involves a significant amount of research and development. During the process, I likely learned a number of things.
 
 ✅Machine Learning: I likely learned about different machine learning algorithms and how they can be applied to predict crop yields and make recommendations for farmers.
 
-✅Data Analysis: I likely gained experience in collecting and analyzing large amounts of data, including historical crop yield data and soil data, to train our machine learning models.
+✅Data Analysis: I likely gained experience in collecting and analyzing large amounts of data to train our machine learning models.
 
-✅Agricultural Trends: I likely gained insight into current trends in agriculture and the challenges facing farmers, such as the need for sustainable and efficient crop production.
-
-✅Collaboration: Building a project like this likely required collaboration with a team of experts in various fields, such as soil science, machine learning, and data analysis, and I likely learned the importance of working together to achieve common goals.
+✅Collaboration: Building a project like this likely required collaboration with a team of experts in various fields, machine learning, and data analysis, and I likely learned the importance of working together to achieve common goals.
 
 These are just a few examples of the knowledge and skills that i likely gained while building this project. 
-Overall, building a crop recommendation application is a challenging and rewarding experience that requires a combination of technical expertise and agricultural knowledge.
+Overall, building a lung cancer application is a challenging and rewarding experience that requires a combination of technical expertise and knowledge.
 
 
 
