@@ -35,7 +35,7 @@ Lung cancer prediction using 9 machine learning classification models using Scik
 
 ✅Building a lung cancer detection application involves a significant amount of research and development. During the process, I likely learned a number of things.
 
-✅Machine Learning: I likely learned about different machine learning algorithms and how they can be applied to predict crop yields and make recommendations for farmers.
+✅Machine Learning: I likely learned about different machine learning algorithms and how they can be applied to detect lung cancer.
 
 ✅Data Analysis: I likely gained experience in collecting and analyzing large amounts of data to train our machine learning models.
 
